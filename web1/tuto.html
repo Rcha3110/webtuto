@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            background-color: aqua;
+            padding: 100px;
+            margin: 25px;
+            border: 2px solid blue;
+            height: 200px; /*Here the height is given to the box class without considering the padding and the border until the box-sizing: border box is added*/
+            box-sizing: border-box; /*considering the padding and the border it gives height 200*/
+            /* If two element's margin overlaps then whichever has maximum margin it will be applied once--> it's margin collapse */
+        }
+    </style>
+</head>
+<body>
+    we can give multiple classes to one element
+    to give more than one classes 
+    <div class="box box1">Here I've given 2 classes to the element</div>
+</body>
+</html>
